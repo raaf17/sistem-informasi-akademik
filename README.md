@@ -1,39 +1,35 @@
-<h1 align="center"> Sistem Informasi Akademik Mahasiswa Codeigniter</h1>
+# Sistem Informasi Akademik Mahasiswa menggunakan CodeIgniter 3
 
+Selamat datang di repositori Sistem Informasi Akademik Mahasiswa! Kami bangga mempersembahkan solusi terbaik untuk mengelola data mahasiswa dengan mudah dan efisien. Dibangun menggunakan framework CodeIgniter 3, website ini menawarkan fitur lengkap termasuk CRUD data mahasiswa, eksport file PDF dan Excel, cetak data, serta pencarian yang efektif.
 
-## Pengantar
+## Fitur Utama
 
-[![Codeigniter](https://img.shields.io/badge/Codeigniter-3.0-red.svg)](https://www.codeigniter.com/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-4.0-green.svg)](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- Manajemen lengkap data mahasiswa, termasuk informasi pribadi, akademik, dan kontak.
+- Operasi CRUD (Create, Read, Update, Delete) yang sederhana dan intuitif untuk memanipulasi data mahasiswa.
+- Eksport data ke dalam format PDF atau Excel untuk memudahkan pelaporan dan analisis.
+- Cetak data mahasiswa dengan tata letak yang rapi dan profesional.
+- Pencarian canggih untuk dengan cepat menemukan informasi mahasiswa tertentu.
 
-&emsp; &emsp; Ini adalah SIAKAD (Sistem Informasi Akademik yang saya buat menggunakan Framework Codeigniter 3 untuk backend-nya dan framework bootstrap 3 untuk tampilannya. <br />
-&emsp; &emsp; Aplikasi ini berfungsi untuk mencatat informasi akademik dari mahasiswa.<br />
-	
-	
-## Fitur
-Fitur yang tersedia di aplikasi ini adalah
-1. Crud data Mahasiswa (nama, nim, tanggal lahir, jurusan, alamat, email, dan nomor telepon) 
-2. Export file PDF dan Excel
-3. Print
-4. Searching
+## Persyaratan Perangkat Lunak
 
-## Kebutuhan
-Software yang diperlukan untuk menjalankan aplikasi ini adalah
-1. XAMPP atau Laragon
-2. Web Browser (Mozilla, Chrome, Opera, dll)
+Sebelum Anda dapat menjalankan aplikasi ini, pastikan Anda memiliki perangkat lunak berikut terpasang di lingkungan pengembangan Anda:
 
-## Cara Instalasi
-1. Pastikan kamu sudah mendownload repositori ini.
-2. Ekstrak dan rubah nama foldernya menjadi 'siakad-codeigniter'.
-3. Letakkan repositori di dalam folder htdocts xampp kamu, contoh: "C:\xampp\htdocs\codeigniter\siakad-codeigniter".
-4. Buka di file "application/config/config.php".
-5. Sesuaikan value dari "$config['base_url']" dengan folder yang digunakan ketika menaruh repositori ini. contoh 'http://localhost/codeigniter/siakad-codeigniter'
-6. Buka aplikasi xampp dan klik start pada apache dan mysql.
-7. Buka web browser dan tulis 'http://localhost/codeigniter/siakad-codeigniter' di form url lalu tekan enter.
-8. Tunggu sampai aplikasi terbuka.
+- Web server (contoh: Apache)
+- PHP 5.6 atau versi lebih baru
+- MySQL database
 
-<br />
-<br />
+## Instalasi
 
-## Email
-raafimuhammad123@gmail.com
+1. Clone repositori ini ke direktori web server Anda: `git clone https://github.com/namarepo.git`
+2. Pastikan direktori `application` dan `system` tidak dapat diakses melalui web.
+3. Buka file `application/config/database.php` dan atur konfigurasi database Anda.
+4. Buka file `application/config/config.php` dan atur base URL sesuai dengan URL website Anda.
+5. Buka browser dan akses URL website Anda untuk melanjutkan instalasi.
+
+## Kontribusi
+
+Kami sangat menghargai kontribusi dari komunitas. Jika Anda ingin berkontribusi pada pengembangan proyek ini, silakan kirimkan pull request melalui GitHub.
+
+Ayo bergabung dan berkontribusi untuk membuat Sistem Informasi Akademik Mahasiswa ini menjadi lebih baik!
+
+Terima kasih atas dukungan Anda!
