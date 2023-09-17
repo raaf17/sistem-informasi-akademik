@@ -1,6 +1,12 @@
 <?php 
 
 class Mahasiswa extends CI_Controller {
+  public function __construct()
+  {
+    parent::__construct();
+    $this->load->helper(array('form', 'url', 'file'));
+  }
+
   public function index()
   {
     $this->load->model('M_mahasiswa');
@@ -32,14 +38,34 @@ class Mahasiswa extends CI_Controller {
     if ($foto = ''){}else{
       $config['upload_path'] = './assets/foto';
       $config['allowed_types'] = 'jpg|png|gif';
+      $config['max_size']             = 100;
+      $config['max_width']            = 1024;
+      $config['max_height']           = 768;
 
       $this->load->library('upload', $config);
       // $this->upload->initialize($config);
+
+      // $uploadData = $this->upload->data();
+      // print_r($uploadData); die;
+      // $image1=site_url().'upload/'.$uploadData['file_name'];
+      // $data = array('foto' => $image1);
+
       if (!$this->upload->do_upload('foto')){
         echo $this->upload->display_errors(); die();
       } else {
         $foto = $this->upload->data('file_name');
       }
+
+      // if (!$this->upload->do_upload('foto')){
+      //   $error = array('error' => $this->upload->display_errors());
+
+      //   $this->load->view('mahasiswa', $error);
+      // } else {
+      //   // $data = array('upload_data' => $this->upload->data());
+
+      //   // $this->load->view('upload_success', $data);
+      //   $foto = $this->upload->data('file_name');
+      // }
     }
 
     $data = array(

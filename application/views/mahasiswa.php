@@ -1,7 +1,7 @@
 <div class="content-wrapper">
   <section class="content-header">
     <h1>
-      Data Mahasiswa
+      <strong>Data Mahasiswa</strong>
       <small>Control panel</small>
     </h1>
     <ol class="breadcrumb">
